@@ -1,23 +1,11 @@
 <div class="container-fluid">
-  <div
-    class="d-sm-flex justify-content-between align-items-center mb-4"
-  >
-    <h3
-      class="text-dark mb-0"
-      style="
-        font-family: 'Dancing Script', serif;
-        color: var(--bs-black);
-      "
-    >
+  <div class="d-sm-flex justify-content-between align-items-center mb-4">
+    <h3 class="text-dark mb-0">
       Stash List
     </h3>
-    <a
-      class="btn btn-primary btn-sm d-none d-sm-inline-block"
-      role="button"
-      routerLink="/stashform"
-      ><i class="fas fa-plus-square fa-sm text-white-50"></i>&nbsp;Add
-      to Stash</a
-    >
+    <a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" routerLink="/stashform"><i
+        class="fas fa-plus-square fa-sm text-white-50"></i>&nbsp;Add
+      to Stash</a>
   </div>
   <div class="card shadow">
     <div class="card-header py-3">
@@ -28,74 +16,49 @@
     </div>
     <div class="card-body">
       <div class="row">
-        <div class="col-md-6 text-nowrap">
-          <div
-            id="dataTable_length"
-            class="dataTables_length"
-            aria-controls="dataTable"
-          >
-            <label class="form-label" style="color: var(--bs-black)"
-              >Show&nbsp;<select
-                class="d-inline-block form-select form-select-sm"
-                style="border-color: var(--bs-blue)"
-              >
+        <div class="col-md-6 text-nowrap ">
+          <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable">
+            <label class="form-label form-label-color">Show&nbsp;
+              <select class="d-inline-block form-select form-select-sm form-border">
                 <option value="10" selected="">5</option>
                 <option value="10">10</option>
-                <option value="20">20</option></select
-              >&nbsp;</label
-            >
+                <option value="20">20</option>
+              </select>
+              &nbsp;</label>
           </div>
         </div>
         <div class="col-md-6">
-          <div
-            class="text-md-end dataTables_filter"
-            id="dataTable_filter"
-          >
-            <label class="form-label"
-              ><input
-                type="search"
-                class="form-control form-control-sm"
-                aria-controls="dataTable"
-                placeholder="Search"
-                style="border-color: var(--bs-blue)"
-            /></label>
+          <div class="text-md-end dataTables_filter" id="dataTable_filter">
+            <label class="form-label">
+              <input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"/>
+            </label>
           </div>
         </div>
       </div>
-      <div
-        class="table-responsive table mt-2"
-        id="dataTable"
-        role="grid"
-        aria-describedby="dataTable_info"
-      >
+      <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
         <table class="table my-0" id="dataTable">
           <thead>
             <tr>
-              <th style="color: var(--bs-black)">Item</th>
-              <th style="color: var(--bs-black)">Description</th>
-              <th style="color: var(--bs-black)">Location</th>
-              <th style="color: var(--bs-black)">Status</th>
-              <th style="color: var(--bs-black)">
+              <th>Item</th>
+              <th>Description</th>
+              <th>Location</th>
+              <th>Status</th>
+              <th>
                 Edit &amp; Delete
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="color: var(--bs-black)">
-                <img
-                  class="img-thumbnail me-2"
-                  width="50"
-                  height="50"
-                  src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"
-                  loading="lazy"
-                />Item
+              <td >
+                <img class="img-thumbnail me-2" width="50" height="50"
+                  src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656" loading="lazy" />Item
               </td>
-              <td style="color: var(--bs-black)">
+              <td >
                 5 words only go here
               </td>
-              <td style="color: var(--bs-black)">First location</td>
-              <td style="color: var(--bs-black)">one status</td>
+              <td >First location</td>
+              <td >one status</td>
               <td>
                 <p>
                   <a href="#"><i class="far fa-edit"></i></a>&nbsp;
@@ -105,12 +68,8 @@
             </tr>
             <tr>
               <td>
-                <img
-                  class="rounded-circle me-2"
-                  width="30"
-                  height="30"
-                  src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"
-                />Angelica Ramos
+                <img class="rounded-circle me-2" width="30" height="30"
+                  src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112" />Angelica Ramos
               </td>
               <td>Chief Executive Officer(CEO)</td>
               <td>London</td>
@@ -124,12 +83,8 @@
             </tr>
             <tr>
               <td>
-                <img
-                  class="rounded-circle me-2"
-                  width="30"
-                  height="30"
-                  src="/assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3"
-                />Ashton Cox
+                <img class="rounded-circle me-2" width="30" height="30"
+                  src="/assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3" />Ashton Cox
               </td>
               <td>Junior Technical Author</td>
               <td>San Francisco</td>
@@ -143,12 +98,8 @@
             </tr>
             <tr>
               <td>
-                <img
-                  class="rounded-circle me-2"
-                  width="30"
-                  height="30"
-                  src="/assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5"
-                />Bradley Greer
+                <img class="rounded-circle me-2" width="30" height="30"
+                  src="/assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5" />Bradley Greer
               </td>
               <td>Software Engineer</td>
               <td>London</td>
@@ -168,25 +119,16 @@
       </div>
       <div class="row">
         <div class="col-md-6 align-self-center">
-          <p
-            id="dataTable_info"
-            class="dataTables_info"
-            role="status"
-            aria-live="polite"
-            style="color: var(--bs-black)"
-          >
+          <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite"
+            >
             Showing 1 to 5 of 27
           </p>
         </div>
         <div class="col-md-6">
-          <nav
-            class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers"
-          >
+          <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
             <ul class="pagination">
               <li class="page-item disabled">
-                <a class="page-link" aria-label="Previous" href="#"
-                  ><span aria-hidden="true">«</span></a
-                >
+                <a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a>
               </li>
               <li class="page-item active">
                 <a class="page-link" href="#">1</a>
@@ -198,9 +140,7 @@
                 <a class="page-link" href="#">3</a>
               </li>
               <li class="page-item">
-                <a class="page-link" aria-label="Next" href="#"
-                  ><span aria-hidden="true">»</span></a
-                >
+                <a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a>
               </li>
             </ul>
           </nav>

@@ -1,11 +1,154 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/bootstrap/css/bootstrap.min.css';
+@import './assets/css/styles.min.css';
+
 
 h1 {
   font-family: 'Dancing Script', serif;
+  color: var(--bs-black);
+
+}
+
+h3 {
   color: var(--bs-black);
 }
 
 p {
   color: var(--bs-black);
 }
+
+.sidebar{
+  width: 255px;
+  padding: 10px 16px;
+  padding-right: 0px;
+  padding-left: 4px;
+  color : var(--bs-blue)
+  }
+
+  .sidebar-brand {
+    color: var(--bs-white);
+    font-family: 'Dancing Script', serif;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .brand {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+
+  /* .accordionside {
+  color: rgb(255,255,255);
+  font-weight: bold;
+  } */
+
+  .nav-link {
+    color: rgb(255,255,255);
+  }
+
+
+  .sbtoggle {
+    margin-top: 0px;
+    padding-top: 26px;
+    padding-bottom: 23px;
+  }
+
+  .search {
+    border: 1px solid var(--bs-blue) ;
+  }
+
+
+  p{
+    color: var(--bs-black);
+    margin-left: 38px;
+  }
+
+
+  footer{
+    font-family: 'Dancing Script', serif;
+    color: var(--bs-blue);
+    font-size: 16.8px;
+  }
+
+  .scroll-to-top {
+    background: var(--bs-blue);
+  }
+
+
+.form-label-color {
+  color: var(--bs-black);
+}
+
+.form-border {
+  border-color: var(--bs-blue);
+}
+
+
+.search {
+  border-color: var(--bs-blue);
+}
+
+.table {
+  color: var(--bs-black);
+}
+
+.form-row {
+  padding: 5px; margin-top: 12px; margin-bottom: 8px;
+}
+
+label {
+  color: var(--bs-black);
+  margin-right: 3px;
+          margin-left: 54px;
+}
+
+textarea{
+  height: 137px;
+  margin: 3px;
+  border-color: var(--bs-blue);
+}
+
+.form-col {
+  height: 38px;
+  margin: 3px;
+  border-color: var(--bs-blue);
+}
+
+select {
+  margin: 5px;
+}
+
+form-select {
+  margin: 3px;
+  border-color: var(--bs-blue);
+}
+
+col-form-label {
+  color: var(--bs-black);
+}
+
+
+.pad{
+  padding: 5px;
+}
+
+
+btn {
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
