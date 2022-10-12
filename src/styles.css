@@ -94,7 +94,10 @@ p {
 }
 
 .form-row {
-  padding: 5px; margin-top: 12px; margin-bottom: 8px;
+  padding: 5px;
+   margin-top: 12px;
+   margin-bottom: 8px;
+
 }
 
 label {
@@ -119,12 +122,12 @@ select {
   margin: 5px;
 }
 
-form-select {
+.form-select {
   margin: 3px;
   border-color: var(--bs-blue);
 }
 
-col-form-label {
+.col-form-label {
   color: var(--bs-black);
 }
 
@@ -134,11 +137,13 @@ col-form-label {
 }
 
 
-btn {
+.btn {
   margin: 5px;
 }
 
-
+.toggle {
+  padding: 5px;
+}
 
 
 

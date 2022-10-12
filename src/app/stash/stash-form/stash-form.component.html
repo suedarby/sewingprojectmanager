@@ -9,7 +9,7 @@
         <label class="col-form-label">Item Name</label>
       </div>
       <div class="col form-col">
-        <input class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap" type="text" required="" name="itemname" placeholder="Item Name" />
+        <input class="form-control flex-grow-1 flex-shrink-1 flex-fill flex-wrap form-border" type="text" required="" name="itemname" placeholder="Item Name" />
       </div>
       <div class="col-lg-2 d-xl-flex justify-content-xl-end align-items-xl-start">
         <label class="col-form-label img-label">Images</label>
@@ -27,7 +27,7 @@
         <textarea class="form-control textarea form-border" name="description" placeholder="Description"></textarea>
       </div>
       <div class="col-lg-1 justify-content-end align-content-end">
-        <label class="col-form-label">Tags</label>
+        <label class="col-form-label m-2">Tags</label>
       </div>
       <div class="col form-col">
         <input class="form-control form-border" type="text" autocomplete="on" autofocus="" name="tags" placeholder="Tags" /><button
@@ -37,67 +37,67 @@
       </div>
     </div>
     <div class="row form-row">
-      <div class="col-lg-2" style="height: 41px">
-        <label class="col-form-label" style="color: var(--bs-black)">Category</label>
+      <div class="col-lg-2" >
+        <label class="col-form-label" >Category</label>
       </div>
-      <div class="col form-col">
-        <input class="form-control" type="text" autocomplete="on" autofocus=""
-          style="margin: 3px; border-color: var(--bs-blue)" name="category" placeholder="Category" /><button
-          class="btn btn-primary" type="button" style="margin: 5px">
+      <div class="col form-col m-2">
+        <input class="form-control form-border" type="text" autocomplete="on" autofocus=""
+         name="category" placeholder="Category" /><button
+          class="btn btn-primary m-2" type="button">
           Category
         </button>
       </div>
       <div class="col-lg-2">
-        <label class="col-form-label" style="margin-left: 46px; color: var(--bs-black)">Location</label>
+        <label class="col-form-label" >Location</label>
       </div>
-      <div class="col form-col">
-        <input class="form-control" type="text" autocomplete="on" autofocus=""
-          style="margin: 5px; border-color: var(--bs-blue)" name="location" placeholder="Location" /><button
-          class="btn btn-primary" type="button" style="margin: 5px">
+      <div class="col form-col m-2">
+        <input class="form-control form-border " type="text" autocomplete="on" autofocus=""
+        name="location" placeholder="Location" /><button
+          class="btn btn-primary pb-2" type="button">
           Location
         </button>
       </div>
     </div>
-    <div class="row form-row">
+    <div class="row form-row pt-4 ">
       <div class="col-md-2">
-        <label class="col-form-label" style="color: var(--bs-black)">Store</label>
+        <label class="col-form-label" >Store</label>
       </div>
       <div class="col form-col">
-        <input class="form-control" type="text" style="margin: 3px; border-color: var(--bs-blue)" autocomplete="on"
+        <input class="form-control form-border" type="text" autocomplete="on"
           name="store" placeholder="Store" />
       </div>
       <div class="col-md-2">
-        <label class="col-form-label" style="margin-left: 80px; color: var(--bs-black)">Cost</label>
+        <label class="col-form-label" >Cost</label>
       </div>
       <div class="col form-col">
-        <input class="form-control" type="text" style="margin: 3px; border-color: var(--bs-blue)" autocomplete="on"
+        <input class="form-control form-border" type="text" autocomplete="on"
           name="cost" value="$" placeholder="Cost" />
       </div>
     </div>
     <div class="row form-row">
       <div class="col-md-2">
-        <label class="col-form-label" style="color: var(--bs-black)">URL</label>
+        <label class="col-form-label" >URL</label>
       </div>
       <div class="col-lg-4">
-        <input class="form-control" type="url" style="border-color: var(--bs-blue)" name="url" placeholder="URL" />
+        <input class="form-control form-border" type="url"  name="url" placeholder="URL" />
       </div>
     </div>
     <div class="row form-row" s>
-      <div class="col-md-5 col-lg-3" style="padding: 5px">
-        <label class="col-form-label" style="color: var(--bs-black)">Add to Shopping list</label>
+      <div class="col-md-5 col-lg-3">
+        <label class="col-form-label " >Add to Shopping List</label>
       </div>
       <div class="col corm-col">
-        <div class="form-check form-switch" style="margin: 3px; color: var(--bs-black)">
-          <input class="form-check-input" type="checkbox" id="formCheck-1" style="border-color: var(--bs-blue)" /><label
-            class="form-check-label" for="shopping" style="color: var(--bs-black)">Shopping</label>
+        <div class="form-check form-switch" >
+          <input class="form-check-input form-border toggle" type="checkbox" id="shopping"  /><label
+            class="form-check-label" for="shopping">Shopping</label>
         </div>
-        <div class="form-check form-switch" style="margin: 3px">
-          <input class="form-check-input" type="checkbox" id="formCheck-2" style="border-color: var(--bs-blue)" /><label
-            class="form-check-label" for="lowstock" style="color: var(--bs-black)">Low Stock</label>
+        <div class="form-check form-switch " >
+          <input class="form-check-input form-border toggle" type="checkbox" id="lowstock" /><label
+            class="form-check-label" for="lowstock" >Low Stock</label>
         </div>
       </div>
     </div>
-    <div class="row form-row" style="margin-top: 8px; margin-bottom: 12px">
+    <div class="row form-row">
       <div class="col-md-5 col-lg-3 pad">
         <label class="col-form-label" >Add to Project</label>
       </div>
@@ -113,7 +113,7 @@
     </div>
     <div class="row form-row">
       <div class="col form-col">
-        <button class="btn btn-primary" type="submit" style="margin: 3px">
+        <button class="btn btn-primary m-3" type="submit" >
           Save
         </button>
       </div>

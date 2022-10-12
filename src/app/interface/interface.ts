@@ -9,22 +9,23 @@ export interface Interface {
     store:	string
     cost:	number
     url:	string
+    qty:	number
     addtoshoppinglist:	boolean
     lowstock:	boolean
-    projectname:	string
-    projectimage:	string
-    projectdescription:	string
-    notstarted:	boolean
-    inprogress:	boolean
-    missingsupplies:	boolean
-    ufo:	boolean
-    completed:	boolean
-    addtostash:	boolean
-    addtoproject:	boolean
-    checkstash:	boolean
-    addtoshopping:	boolean
-    ytdcost:	number
-    budget:	number
-    qty:	number
+    // projectname:	string
+    // projectimage:	string
+    // projectdescription:	string
+    // notstarted:	boolean
+    // inprogress:	boolean
+    // missingsupplies:	boolean
+    // ufo:	boolean
+    // completed:	boolean
+    // addtostash:	boolean
+    // addtoproject:	boolean
+    // checkstash:	boolean
+    // addtoshopping:	boolean
+    // ytdcost:	number
+    // budget:	number
+
 
   }
