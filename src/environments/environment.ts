@@ -7,6 +7,7 @@ export const environment = {
     projectId: 'sewing-project-manager',
     appId: '1:1009861666140:web:ce242a31f43d851b1c4d99',
     storageBucket: 'sewing-project-manager.appspot.com',
+    locationId: 'us-central',
     apiKey: 'AIzaSyDtMJnWX-ytP23VNB7ve7k45xRgUcX2fz0',
     authDomain: 'sewing-project-manager.firebaseapp.com',
     messagingSenderId: '1009861666140',
@@ -22,4 +23,4 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+import 'zone.js/plugins/zone-error';  // Included with Angular CLI.

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sewing-project-manager": {
+      "hosting": {
+        "sewing-project-manager": [
+          "sewing-project-manager"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sewing-project-manager"
+  }
+}
