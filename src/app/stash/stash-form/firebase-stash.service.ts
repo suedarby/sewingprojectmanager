@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
-import { Firestore, getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc, DocumentData, CollectionReference, onSnapshot, QuerySnapshot } from 'firebase/firestore'
+import { Firestore, getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc, DocumentData, CollectionReference, onSnapshot, QuerySnapshot } from 'firebase/firestore';
 import { Subject } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 
+// import { } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js"
+// import { } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-installations.js"
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +22,7 @@ export class FirebaseStashService {
   db: Firestore;
   stashCol: CollectionReference<DocumentData>;
   updatedSnapshot: any;
+  static addStash: any;
 
   constructor() {
     // initializeApp(environment); // <---Error?
@@ -27,9 +30,9 @@ export class FirebaseStashService {
     this.stashCol = collection(this.db, 'stash');
 
     // Get Realtime Data
-    onSnapshot(this.stashCol, (snapshot) => {
+    onSnapshot(this.stashCol, (snapshot: any) => {
       this.updatedSnapshot.next(snapshot);
-    }, (err) => {
+    }, (err: any) => {
       console.log(err);
     })
   }
