@@ -11,7 +11,6 @@ import { FirebaseStashService } from './firebase-stash.service';
 export class StashFormComponent implements OnInit {
 
   stashDetails = {
-    stashId : '',
     itemname	: '',
     images	: '',
     description	: '',
@@ -38,7 +37,6 @@ export class StashFormComponent implements OnInit {
 
   async add() {
     const {
-      stashId,
       itemname	,
       images	,
       description	,
@@ -53,7 +51,6 @@ export class StashFormComponent implements OnInit {
       qty	, } = this.stashDetails;
     await FirebaseStashService.addStash(
 
-   this.stashDetails.stashId = "",
    this.stashDetails.itemname=	"",
    this.stashDetails.images	 =	"",
    this.stashDetails.description	 =	"",

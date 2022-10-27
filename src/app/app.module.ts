@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
 import { HomeComponent } from './home/home.component';
 import { StashComponent } from './stash/stash.component';
 
-// import { FirebaseAppModule } from '@angular/fire/app';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DatabaseModule } from '@angular/fire/database';
-import { environment } from 'src/environments/environment.prod';
+
 @NgModule({
  declarations: [
    AppComponent,
@@ -17,15 +15,14 @@ import { environment } from 'src/environments/environment.prod';
    StashComponent,
  ],
  imports: [
-  AppModule,
-  // HomeComponent,
-  // StashComponent,
+    RouterModule,
    BrowserModule,
-  //  FirebaseAppModule.initializeApp(environment.firebaseConfig),
    DatabaseModule,
-  //  RouterModule,
  ],
  providers: [],
- bootstrap: [AppComponent]
+ bootstrap: [AppComponent],
+ exports: [  AppComponent,
+  HomeComponent,
+  StashComponent,]
 })
 export class AppModule { }

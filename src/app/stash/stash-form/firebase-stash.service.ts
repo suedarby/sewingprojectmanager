@@ -1,21 +1,13 @@
 import { Injectable } from '@angular/core';
-import { initializeApp } from 'firebase/app';
 import { Firestore, getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc, DocumentData, CollectionReference, onSnapshot, QuerySnapshot } from 'firebase/firestore';
-import { Subject } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
-
-// import { } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore.js"
-// import { } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-installations.js"
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FirebaseStashService {
 
-  // db: sewingprojectmanager;
-  // stashCol: CollectionReference<DocumentData>;
-  // private updatedSnapshot = new Item<QuerySnapshot<DocumentData>>();
-  // obsr_UpdatedSnapshot = this.updatedSnapshot.asObservable();
+
 
   private stashCollection: CollectionReference<DocumentData> | undefined;
   obsr_UpdatedSnapshot: any;
@@ -25,7 +17,7 @@ export class FirebaseStashService {
   static addStash: any;
 
   constructor() {
-    // initializeApp(environment); // <---Error?
+    initializeApp(environment); // <---Error?
     this.db = getFirestore();
     this.stashCol = collection(this.db, 'stash');
 
@@ -64,6 +56,8 @@ export class FirebaseStashService {
   }
 
 
-
-
 }
+function initializeApp(environment: { firebase: { projectId: string; appId: string; storageBucket: string; locationId: string; apiKey: string; authDomain: string; messagingSenderId: string; measurementId: string; }; production: boolean; }) {
+  throw new Error('Function not implemented.');
+}
+

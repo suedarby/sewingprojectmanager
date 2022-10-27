@@ -1,5 +1,4 @@
 export interface Stash {
-  stashId : string;
   itemname	:	string	;
   images	:	string;
   description	:	string ;
