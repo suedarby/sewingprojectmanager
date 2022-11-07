@@ -10,15 +10,32 @@ import { AppRoutingModule } from './app-routing.module';
 
 //add additional imports below here
 
+import { SearchComponent } from './search/search.component';
+import { StashComponent } from './stash/stash.component';
+import { StashFormComponent } from './stash/stash-form/stash-form.component';
 
+//Firebase
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { environment } from 'src/environments/environment';
+
+import { DatabaseModule } from '@angular/fire/database';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule, AppRoutingModule,
   //add additional imports below here
-
+  DatabaseModule,
+  provideFirebaseApp(() => initializeApp(environment.firebase)),
+   provideAuth(() => getAuth()),
+   provideFirestore(() => getFirestore()),
+NgbModule,
   ],
   declarations: [ AppComponent, HomeComponent,
   // add additional declarations below
+    SearchComponent, StashComponent, StashFormComponent,
 
   ],
   bootstrap:    [ AppComponent ]
