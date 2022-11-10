@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DocumentData, QuerySnapshot } from '@firebase/firestore';
-import { FirebaseStashService } from '../../services/firebase-stash.service';
+import { FirebaseStashService } from '../services/firebase-stash.service';
 
 @Component({
   selector: 'app-stash-form',

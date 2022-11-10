@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SearchComponent } from './search/search.component';
 import { StashComponent } from './stash/stash.component';
-import { StashFormComponent } from './stash/stash-form/stash-form.component';
+import { StashFormComponent } from './stash/stash-form.component';
 
 //Firebase
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';

@@ -17,7 +17,7 @@ export class FirebaseStashService {
   static addStash: any;
 
   constructor() {
-    initializeApp(environment); // <---Error?
+    initializeApp(environment); 
     this.db = getFirestore();
     this.stashCol = collection(this.db, 'stash');
 
